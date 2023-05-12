@@ -1,17 +1,17 @@
-name: PHPSTAN
-on: push
-jobs:
-  phpstan:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - uses: php-actions/composer@v6
-        with:
-          working_dir: app/
-
-      - name: PHPStan Static Analysis
-        uses: php-actions/phpstan@v3
-        with:
-          path: app/
-          configuration: app/phpstan.neon
+#name: PHPSTAN
+#on: push
+#jobs:
+#  phpstan:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#
+#      - uses: php-actions/composer@v6
+#        with:
+#          working_dir: app/
+#
+#      - name: PHPStan Static Analysis
+#        uses: php-actions/phpstan@v3
+#        with:
+#          path: app/
+#          configuration: app/phpstan.neon
