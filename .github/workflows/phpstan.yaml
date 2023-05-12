@@ -9,6 +9,8 @@ jobs:
           path: app/
 
       - uses: php-actions/composer@v6
+        with:
+          path: app/
 
       - name: PHPStan Static Analysis
         uses: php-actions/phpstan@v3
