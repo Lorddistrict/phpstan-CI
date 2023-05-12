@@ -1,0 +1,11 @@
+{
+    "name": "root/app",
+    "require": {
+        "intervention/zodiac": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Root\\App\\": "/"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+services:
+  php:
+    image: php:8.2-apache
+    restart: unless-stopped
+    user: 1000:1000
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - "127.0.0.1:3000:80"
