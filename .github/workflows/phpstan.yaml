@@ -1,10 +1,12 @@
-name: Hadolint
+name: PHPSTAN
 on: push
 jobs:
   phpstan:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          path: app/
 
       - uses: php-actions/composer@v6
 
